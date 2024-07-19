@@ -38,12 +38,12 @@ const App = () => {
   }, []);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/blog-post-app'>
       <div>
         <Header />
         <Link to='/new-post'>Creat New Post</Link>
         <Routes>
-          <Route path='/' element={ <PostList onPostClick={handlePostClick} posts={posts} loading={loading} error={error} />}></Route>
+          <Route exact path='/blog-post-app' element={ <PostList onPostClick={handlePostClick} posts={posts} loading={loading} error={error} />}></Route>
           <Route path='/new-post' element={<CreatePost onPostCreated={handlePostCreated}></CreatePost>}></Route>
           <Route path='/post-detail' element={<PostDetail post={selectedPost} />}></Route>
         </Routes>

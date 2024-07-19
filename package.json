@@ -1,7 +1,7 @@
 {
   "name": "blog-post-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https:///Rinki12345.github.io/blog-post-app",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
